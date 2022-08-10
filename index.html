@@ -28,6 +28,11 @@
 <!DOCTYPE html>
 <html>
   <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+  <script src="https://google-ar.github.io/three.ar.js/dist/three.ar.js"></script>
+  <script src="https://rawgit.com/chenzlabs/aframe-ar/827e9db/dist/aframe-ar.min.js"></script>
+
+  <script src="https://raw.githack.com/jeromeetienne/AR.js/2.2.2/aframe/build/aframe-ar.js"></script>
   <script src="js/aframe.min.js"></script>
   <script src="js/aframe-ar.js"></script>
   <body style="margin: 0px; overflow: hidden">
@@ -45,7 +50,7 @@
     for more examples:  https://stemkoski.github.io/A-Frame-Examples/animation.html
     -->
 
-      <a-marker type="pattern" url="data/kanji.patt">
+      <a-marker preset="hiro">
         <a-sphere
           position="0 0.5 0"
           material="src: #earth-sphere; transparent: true; opacity: 0.95;"
