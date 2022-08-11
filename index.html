@@ -47,17 +47,16 @@
       arjs="sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: true;"
     >
       <!-- SNOW  -->
-      <a-entity
-        position="0 2.25 -15"
-        particle-system="preset: snow; particleCount: 10000"
-      ></a-entity>
 
       <!-- MARKER -->
       <a-marker preset="hiro">
         <!-- <a-cone color="tomato" radius-bottom="1" radius-top="0.5"></a-cone> -->
-        <a-entity camera></a-entity>
+        <a-entity
+          position="0 2.25 -15"
+          particle-system="preset: snow; particleCount: 10000"
+        ></a-entity>
       </a-marker>
-
+      <a-entity camera></a-entity>
       <!-- <a-camera> </a-camera> -->
     </a-scene>
   </body>
