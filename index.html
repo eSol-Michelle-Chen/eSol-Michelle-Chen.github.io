@@ -11,6 +11,10 @@
   <h1>TESTING</h1>
   <body style="margin: 0px; overflow: hidden">
     <a-scene embedded ar.js>
+      <!-- define your gltf asset -->
+      <a-assets>
+        <a-asset-item id="tree" src="/path/to/tree.gltf"></a-asset-item>
+      </a-assets>
       <a-marker preset="hiro">
         <!-- <a-box
           position="0 0 0"
@@ -20,10 +24,6 @@
           animation="property: rotation; dur: 3000; to: 0 360 0; loop: true"
         ></a-box> -->
 
-        <!-- define your gltf asset -->
-        <a-assets>
-          <a-asset-item id="tree" src="/path/to/tree.gltf"></a-asset-item>
-        </a-assets>
         <!-- use your gltf model -->
         <a-entity gltf-model="##tree"></a-entity>
       </a-marker>
