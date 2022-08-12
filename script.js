@@ -4,7 +4,7 @@ var mControls;
 
 var mScene;
 
-var mParticleCount = 100000; // <-- change this number!
+var mParticleCount = 1000; // <-- change this number!
 var mParticleSystem;
 
 var mTime = 0.0;
@@ -31,15 +31,20 @@ function initTHREE() {
   mContainer = document.getElementById("three-container");
   mContainer.appendChild(mRenderer.domElement);
 
-  mCamera = new THREE.PerspectiveCamera(
-    60,
-    window.innerWidth / window.innerHeight,
-    0.1,
-    5000
-  );
-  mCamera.position.set(0, 600, 600);
+  //   mCamera = new THREE.PerspectiveCamera(
+  //     60,
+  //     window.innerWidth / window.innerHeight,
+  //     0.1,
+  //     5000
+  //   );
+  mCamera = new THREE.Camera();
+
+  //   mCamera.position.set(0, 600, 600);
 
   mScene = new THREE.Scene();
+
+  //
+  mScene.add(cam);
 
   var light;
 
