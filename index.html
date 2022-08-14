@@ -36,11 +36,12 @@
             material="src: woody.png; color: #E5E4E2; repeat: 3.5 20"
           ></a-cone>
           <a-entity
-            position="0 0 0"
-            maxAge="0.0.1"
-            scale="-0.1 1 0"
+            position="0 1 0"
+            maxAge="0.1"
+            scale="-0.5 1 0"
+            rotation = "10 0 0"
             animation="property: position; to: 3 20 -1; dur: 2000; easing: linear; loop: true; delay: 3"
-            particle-system=" texture: https://cdn.rawgit.com/IdeaSpaceVR/aframe-particle-system-component/master/dist/images/smokeparticle.png; color: #FFC65D,#FFC65D; maxAge: 15; positionSpread: 0 0 0; rotationAngle: 0; accelerationValue: -0 10 0;  accelerationSpread: 10 0 10; velocityValue: -10 25 0; velocitySpread: 10 7.5 10; particleCount: 100; velocityValue: 0 10 0; duration: 0;"
+            particle-system=" texture: https://cdn.rawgit.com/IdeaSpaceVR/aframe-particle-system-component/master/dist/images/smokeparticle.png; color: #FFC65D,#FFC65D; maxAge: 15; positionSpread: 0 0 0; rotationAngle: 0; accelerationValue: 0 10 0;  accelerationSpread: 0 0 10; velocityValue: -0 10 0; velocitySpread: 10 7.5 10; particleCount: 1000; duration: 0;"
           >
           </a-entity>
         </a-entity>
